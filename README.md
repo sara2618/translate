@@ -16,3 +16,5 @@ python translate.py input.txt output.txt
 ```
 - The output file will be saved in the same folder as .py is.
 
+### Output
+[![_](https://i.imgur.com/myR3oX6.jpg)]
