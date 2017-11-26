@@ -5,10 +5,15 @@ import sys
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
+print('Read Files...')
+print('System encode : ' + sys.stdin.encoding)
+
 data = open(input_file, 'r', encoding = sys.stdin.encoding) 
 data_lines = data.readlines()
 
 list = []
+
+print('Parsing...')
 
 #preprocess data
 for line in data_lines:
@@ -18,6 +23,8 @@ for line in data_lines:
 	list += tmp_list
 
 translator = Translator()
+
+print('Translating...')
 
 #translate and write files
 with open(output_file, 'w') as text_file:
