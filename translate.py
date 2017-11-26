@@ -5,7 +5,7 @@ import sys
 input_file = sys.argv[1]
 output_file = sys.argv[2]
 
-data = open(input_file, 'r', encoding = 'utf8') 
+data = open(input_file, 'r', encoding = sys.stdin.encoding) 
 data_lines = data.readlines()
 
 list = []
